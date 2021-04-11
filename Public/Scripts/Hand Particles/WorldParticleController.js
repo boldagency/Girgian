@@ -13,8 +13,8 @@
 //@input Component.Image hand
 //@input Component.Image wrist
 //@input Component.Image middleFinger
-//@input Component.ScriptComponent airplane
-//@input Component.AnimationMixer airplaneObject
+//@input Component.AnimationMixer[] candies
+
 //@input Component.AudioComponent sound
 
 // Initialize variables to store the particle systems in
@@ -37,34 +37,35 @@ var isTrackingLost = true;
 var isHandClosed = false;
 
 var isPlayed=false;
-var countDown=5;
-var isCountDownOver=false;
-
 var isCandyVisible=false;
 var playCandyAnimation=false;
+var candy=null;
 
 function initialize() {
     if (validateInputs()) {
         setInputs();
         generateParticles();
         isInitialized = true;
+        
+        candy= getRandomCandy();
     }
 }
 
 function onUpdate(eventData) {
     updateWorldParticles();
+    
 
-    if(script.hand.getTransform().getWorldRotation().z>= -0.2 || script.middleFinger.getTransform().getWorldRotation().z > -0.8){
+    if(script.hand.getTransform().getWorldRotation().z>= -0.2 || script.middleFinger.getTransform().getWorldRotation().z > -0.9){
        stop();
       
          if(script.middleFinger.getTransform().getWorldRotation().z > -0.7){
            
             if(isCandyVisible){
                 isCandyVisible=false;
-                   if(global.tweenManager){  
-                   //     print('hide3')
-                        global.tweenManager.startTween(script.airplaneObject.getSceneObject(), "hide_plane");
-                    }  
+                   if(global.tweenManager){                      
+                    global.tweenManager.startTween( candy.getSceneObject(), "hide_plane");
+                   
+                  }  
             }
           
         }
@@ -72,35 +73,38 @@ function onUpdate(eventData) {
 
     }
     else{
-        if(!isTrackingLost ){
+        if(!isTrackingLost &&   !isCandyVisible ){
                 play()  
-                if(global.tweenManager && !isCandyVisible){
-                isCandyVisible=true
-            global.tweenManager.startTween(script.airplaneObject.getSceneObject(), "show_plane");
-                script.airplaneObject.autoplay=true;
-                
-                   if(!playCandyAnimation){
-                    delayedEventANimation.reset(1);
-                    print("delay has started");
-
-
-        }
-            } 
-    
+                showCandy()
         }
 
     }
 }
 
-var delayedEventANimation = script.createEvent("DelayedCallbackEvent");
-delayedEventANimation.bind(function(eventData)
-{
-    //print("delay is over");
-     playCandyAnimation=true
-     script.airplaneObject.autoplay=true
-      script.airplaneObject.start('Layer0', 0, 2);
 
-});
+//Get Random Candy to be displayed when user opens his hand
+function getRandomCandy()
+{
+   var rand = Math.floor(Math.random() * script.candies.length);
+   return script.candies[rand];
+}
+
+
+function showCandy(){
+    if(global.tweenManager){
+        isCandyVisible=true
+        global.tweenManager.startTween(candy.getSceneObject(), "show_plane");
+        candy.autoplay=true;
+
+        if(!playCandyAnimation){
+            playCandyAnimation=true            
+             candy.autoplay=true
+             candy.start('Layer0', 0, 1);
+        }
+    } 
+}
+
+
 
 // Start with a 2 second delay
 
@@ -125,14 +129,8 @@ function generateParticles() {
         mv.clearMaterials();
         mv.addMaterial(originalParticleMeshVisual.mainMaterial.clone());
         
-        //var t= handPosition.getTransform().getWorldPosition();
-        var t= script.hand.getSceneObject().getTransform().getWorldPosition();
-        t.x= t.x + 120;
-       // t.y=0;
-       // t.z=0;
         
        
-      newObject.getTransform().setWorldPosition(t) ;
         var pass = mv.mainMaterial.mainPass;
         pass.externalSeed = Math.random();
 
@@ -162,10 +160,6 @@ function updateWorldParticles() {
 
        instance.enabled = isParticlePlaying;
         
-        var hand= script.wrist.getTransform().getWorldPosition()
-       currentPos.x=hand.x+120;
-       currentPos.y= Math.floor(Math.random() * (hand.y-5  - hand.y+5  + 1) + (hand.y-5));;
-       currentPos.z=currentPos.z  ;
         instance.getTransform().setWorldPosition(currentPos);
         instance.getTransform().setWorldRotation(currentRot);
 
@@ -222,57 +216,30 @@ function setInputs() {
     script.api.updateParticlePasses = updateParticlePasses;
 }
 function play() {
-    if(script.hand.getTransform().getWorldRotation().z < -0.2 && script.middleFinger.getTransform().getWorldRotation().z <= -0.8){
+    if(script.hand.getTransform().getWorldRotation().z < 0){
         
         if(!isPlayed){
             isPlayed=true; 
-            script.sound.play(1)
-          
+            script.sound.play(1) 
         }
-    isParticlePlaying = true;
-        if(!isTrackingLost ){
-          countdownStart()
-        }
+        isParticlePlaying = true;
+    }
+}
+
+function hideCandies(){
+    for(var i=0; i<script.candies.length; i++){
+        global.tweenManager.startTween( script.candies[i].getSceneObject(), "hide_plane");
     }
 }
 
 function stop() {
    isParticlePlaying = false;
- //   isPlayed=false;
 }
+
 function closeGesture(){
-        isHandClosed=true
-    isCandyVisible=false
-        
+    isHandClosed=true
+    isCandyVisible=false    
 }
-var countDownDate=10;
-//Enable Counter
-function countdownStart() {
-    // Update the count down every 1 second
-    var delayedEvent = script.createEvent('DelayedCallbackEvent')
-    delayedEvent.bind(function(eventData) {
-    countDownDate  = countDownDate - 1;
-         if (countDownDate <= 5) {
-            stop();
-           // print('show candy')
-        }
-      if (countDownDate <= 0) {
-        countdownFinished()
-      } else {
-        delayedEvent.reset(1)
-      }
-    })
-    delayedEvent.reset(0)
-}
-
-//Function that will run when countdowun is over
-function countdownFinished() {
-    if(!isTrackingLost ){
-    stop();
-    countDownDate=10;
-    }
-}
-
 script.api.closeGesture=closeGesture;
 
 function openGesture(){
@@ -283,26 +250,19 @@ script.api.openGesture=openGesture;
 
 function trackingFound() {
     isTrackingLost=false;
-
-   // isParticlePlaying = false;
+    
+    //hide all candies and assign new candy
+    hideCandies();
+    candy= getRandomCandy();
 }
+
 script.api.trackingFound=trackingFound;
-function trackingLost() {
 
-    
-     isTrackingLost=true;
+function trackingLost() { 
+    isTrackingLost=true;
     isPlayed=false; 
-    playCandyAnimation=false;
-    stop();
-    stop();
-    
-    
-   if(global.tweenManager){  
-       global.tweenManager.startTween(script.airplaneObject.getSceneObject(), "hide_plane");
-  }  
-   
-
-   // isParticlePlaying = false;
+    stop();   
+    isParticlePlaying = false;
 }
 script.api.trackingLost=trackingLost;
 
