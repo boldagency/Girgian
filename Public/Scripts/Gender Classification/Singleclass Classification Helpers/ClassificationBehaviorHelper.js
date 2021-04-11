@@ -41,11 +41,10 @@ function callBehaviorArray(arr) {
 
 script.api.toggleGender = function(gender) {
     automaticDetection=false;
-   // print(gender);
     if(gender=='MALE'){ 
         script.femaleHead.getSceneObject().enabled=false;
         script.maleHead.getSceneObject().enabled=true;
-    }
+    } 
     else{
         script.maleHead.getSceneObject().enabled=false;
         script.femaleHead.getSceneObject().enabled=true;

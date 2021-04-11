@@ -3,7 +3,7 @@
     "document_id": "5gHTu4YC10oCWnd1Iiyl",
     "original_document_id": "5gHTu4YC10oCWnd1Iiyl",
     "version": "27",
-    "lastChanged": "1618166347251",
+    "lastChanged": "1618180836200",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -672,16 +672,15 @@
                         "Portrait Background Segmentation"
                     ],
                     [
+                        "Scripts"
+                    ],
+                    [
                         "Scripts",
                         "BokehController"
                     ],
                     [
                         "Scripts",
                         "ChainController"
-                    ],
-                    [
-                        "Scripts",
-                        "Gender Classification"
                     ],
                     [
                         "Scripts",
@@ -693,6 +692,10 @@
                         "Scripts",
                         "Gender Classification",
                         "SingleclassClassificationController"
+                    ],
+                    [
+                        "Scripts",
+                        "Hand Particles"
                     ],
                     [
                         "Scripts",
@@ -836,12 +839,22 @@
                     [
                         "Textures",
                         "Menu Textures",
-                        "female"
+                        "female-icon"
                     ],
                     [
                         "Textures",
                         "Menu Textures",
-                        "male"
+                        "female-icon-active"
+                    ],
+                    [
+                        "Textures",
+                        "Menu Textures",
+                        "male-icon"
+                    ],
+                    [
+                        "Textures",
+                        "Menu Textures",
+                        "male-icon-active"
                     ],
                     [
                         "Textures",
@@ -895,6 +908,7 @@
                     "1617904344548791:1050489",
                     "1617904344838163:1050852",
                     "1617904345204762:1051419",
+                    "1617904345217651:1051421",
                     "1617904345234657:1051783",
                     "1617904345237952:1051787",
                     "1617904345252544:1051831",
@@ -904,9 +918,10 @@
                     "1617965167593211:56171",
                     "1617965209036232:68068",
                     "1617965284561303:97316",
-                    "1618005171000023:65719",
-                    "1618005171003136:65721",
-                    "1618005171006085:65723",
+                    "1618005171006985:65725",
+                    "1618005171008747:65729",
+                    "1618005171147399:66285",
+                    "1618005171286648:67035",
                     "1618005171593220:70922",
                     "1618005171599777:70924",
                     "1618005171693400:71013",
@@ -930,7 +945,7 @@
             ]
         },
         "MetaInfoUIComponent": {
-            "icon_hash": "56814dbefc6c60009fe6066406087653",
+            "icon_hash": "34238c0a10d3046a09695912b1ac75f3",
             "icon_path": "icon.png",
             "hints": [
                 ""
@@ -982,6 +997,9 @@
                     "1617904345310184:1053438",
                     "1617904345316316:1053768",
                     "1617904345321716:1054096",
+                    "1618005171130385:66067",
+                    "1618005171168257:66429",
+                    "1618005171218689:66617",
                     "1618005171489193:68106",
                     "1618005171492863:68434",
                     "1618005171916018:71937",
@@ -1291,22 +1309,6 @@
                     "resId": "78",
                     "uid": "1618005167691676:64935",
                     "name": "Files\/File124.jpg",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "79",
-                    "uid": "1618005167839841:64966",
-                    "name": "Files\/File127.jpg",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "80",
-                    "uid": "1618005168245986:64994",
-                    "name": "Files\/File130.jpg",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -2142,6 +2144,38 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "0"
+                },
+                {
+                    "resId": "379",
+                    "uid": "1618180026227101:124119",
+                    "name": "Files\/File565.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "380",
+                    "uid": "1618180031532851:139596",
+                    "name": "Files\/File569.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "381",
+                    "uid": "1618180035078282:154870",
+                    "name": "Files\/File573.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "382",
+                    "uid": "1618180043592859:170749",
+                    "name": "Files\/File577.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -2398,40 +2432,12 @@
                             }
                         },
                         {
-                            "k": "1618005171348654:67300",
-                            "v": {
-                                "isBasicMode": "true",
-                                "basicModeSetup": {
-                                    "fixWidth": "true",
-                                    "fixHeight": "true",
-                                    "attachBottom": "false",
-                                    "attachLeft": "false",
-                                    "attachRight": "false",
-                                    "attachTop": "false"
-                                }
-                            }
-                        },
-                        {
-                            "k": "1618005171400258:67572",
-                            "v": {
-                                "isBasicMode": "true",
-                                "basicModeSetup": {
-                                    "fixWidth": "true",
-                                    "fixHeight": "true",
-                                    "attachBottom": "false",
-                                    "attachLeft": "false",
-                                    "attachRight": "false",
-                                    "attachTop": "false"
-                                }
-                            }
-                        },
-                        {
                             "k": "1618005171416932:67706",
                             "v": {
                                 "isBasicMode": "false",
                                 "basicModeSetup": {
-                                    "fixWidth": "true",
-                                    "fixHeight": "true",
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
                                     "attachBottom": "false",
                                     "attachLeft": "false",
                                     "attachRight": "false",
@@ -2919,30 +2925,6 @@
                     "v": "Files\/File126.png"
                 },
                 {
-                    "k": "127",
-                    "v": "Files\/File127.pvr"
-                },
-                {
-                    "k": "128",
-                    "v": "Files\/File128.png"
-                },
-                {
-                    "k": "129",
-                    "v": "Files\/File129.png"
-                },
-                {
-                    "k": "130",
-                    "v": "Files\/File130.pvr"
-                },
-                {
-                    "k": "131",
-                    "v": "Files\/File131.png"
-                },
-                {
-                    "k": "132",
-                    "v": "Files\/File132.png"
-                },
-                {
                     "k": "133",
                     "v": "Files\/File133.js"
                 },
@@ -3271,20 +3253,12 @@
                     "v": "Files\/File214.png"
                 },
                 {
-                    "k": "215",
-                    "v": "Files\/File215.pvr"
-                },
-                {
                     "k": "216",
                     "v": "Files\/File216.pvr"
                 },
                 {
                     "k": "217",
                     "v": "Files\/File217.pvr"
-                },
-                {
-                    "k": "218",
-                    "v": "Files\/File218.pvr"
                 },
                 {
                     "k": "219",
@@ -3665,6 +3639,70 @@
                 {
                     "k": "564",
                     "v": "Files\/File564.pvr"
+                },
+                {
+                    "k": "565",
+                    "v": "Files\/File565.pvr"
+                },
+                {
+                    "k": "566",
+                    "v": "Files\/File566.png"
+                },
+                {
+                    "k": "567",
+                    "v": "Files\/File567.png"
+                },
+                {
+                    "k": "568",
+                    "v": "Files\/File568.pvr"
+                },
+                {
+                    "k": "569",
+                    "v": "Files\/File569.pvr"
+                },
+                {
+                    "k": "570",
+                    "v": "Files\/File570.png"
+                },
+                {
+                    "k": "571",
+                    "v": "Files\/File571.png"
+                },
+                {
+                    "k": "572",
+                    "v": "Files\/File572.pvr"
+                },
+                {
+                    "k": "573",
+                    "v": "Files\/File573.pvr"
+                },
+                {
+                    "k": "574",
+                    "v": "Files\/File574.png"
+                },
+                {
+                    "k": "575",
+                    "v": "Files\/File575.png"
+                },
+                {
+                    "k": "576",
+                    "v": "Files\/File576.pvr"
+                },
+                {
+                    "k": "577",
+                    "v": "Files\/File577.pvr"
+                },
+                {
+                    "k": "578",
+                    "v": "Files\/File578.png"
+                },
+                {
+                    "k": "579",
+                    "v": "Files\/File579.png"
+                },
+                {
+                    "k": "580",
+                    "v": "Files\/File580.pvr"
                 }
             ]
         },
@@ -3764,14 +3802,6 @@
                     {
                         "k": "23209",
                         "v": "Textures\/Menu Textures\/toggle_on.png"
-                    },
-                    {
-                        "k": "23210",
-                        "v": "Textures\/Menu Textures\/male.png"
-                    },
-                    {
-                        "k": "23211",
-                        "v": "Textures\/Menu Textures\/female.png"
                     },
                     {
                         "k": "23215",
@@ -4244,6 +4274,22 @@
                     {
                         "k": "23512",
                         "v": "Candy"
+                    },
+                    {
+                        "k": "23513",
+                        "v": "Textures\/Menu Textures\/female-icon-active.png"
+                    },
+                    {
+                        "k": "23514",
+                        "v": "Textures\/Menu Textures\/male-icon-active.png"
+                    },
+                    {
+                        "k": "23515",
+                        "v": "Textures\/Menu Textures\/female-icon.png"
+                    },
+                    {
+                        "k": "23516",
+                        "v": "Textures\/Menu Textures\/male-icon.png"
                     }
                 ],
                 "hashes": [
@@ -4837,7 +4883,7 @@
                     },
                     {
                         "k": "23277",
-                        "v": "85e01103376187d0e866e8ca4930144a"
+                        "v": "cd58f91c28cb250501550d24fe9aaa0d"
                     },
                     {
                         "k": "23278",
@@ -5614,6 +5660,22 @@
                     {
                         "k": "23510",
                         "v": "324c36e489a052c2c754876ddac2ab02"
+                    },
+                    {
+                        "k": "23513",
+                        "v": "051e1e08a59c01ab1d53da92c0aebe52"
+                    },
+                    {
+                        "k": "23514",
+                        "v": "df28f92df1083d82ef55b844295d7726"
+                    },
+                    {
+                        "k": "23515",
+                        "v": "0e119d3915aa96454c15ac440906e400"
+                    },
+                    {
+                        "k": "23516",
+                        "v": "84465abadbfd94f8e97a71ca4dbb053d"
                     }
                 ],
                 "publicState": {
@@ -5621,13 +5683,13 @@
                         "isFolder": "true",
                         "lastModified": "2021-04-11T21:27:07",
                         "name": "Public",
-                        "hash": "7221805c3c6d097d99f72bfe09bd4a04",
+                        "hash": "6ed8be72f6bd8083cf619ff1bdc75fe7",
                         "children": [
                             {
                                 "isFolder": "true",
                                 "lastModified": "2021-04-11T16:11:36",
                                 "name": "Textures",
-                                "hash": "846bf5eb487c46414b5ac7f01ab13225",
+                                "hash": "92c6a8fcea91302b87177cab466f5cf8",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -5652,15 +5714,22 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2021-04-11T15:27:23",
+                                        "lastModified": "2021-04-12T01:31:06",
                                         "name": "Menu Textures",
-                                        "hash": "2c9dd071e54ffb0456d8fec66aa02a23",
+                                        "hash": "0a9a4028aad2e2a33730fb417a7c0363",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-04-10T00:52:47",
-                                                "name": "male.png",
-                                                "hash": "2c3c3170bef893fbdd3dec1cbbe2f6cf",
+                                                "lastModified": "2021-04-12T01:24:55",
+                                                "name": "female-icon-active.png",
+                                                "hash": "051e1e08a59c01ab1d53da92c0aebe52",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2021-04-12T01:26:01",
+                                                "name": "female-icon.png",
+                                                "hash": "0e119d3915aa96454c15ac440906e400",
                                                 "children": ""
                                             },
                                             {
@@ -5672,9 +5741,16 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-04-10T00:52:47",
-                                                "name": "female.png",
-                                                "hash": "b7baadf34abb5534ee614487837c13b8",
+                                                "lastModified": "2021-04-12T01:26:18",
+                                                "name": "male-icon.png",
+                                                "hash": "84465abadbfd94f8e97a71ca4dbb053d",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2021-04-12T01:25:28",
+                                                "name": "male-icon-active.png",
+                                                "hash": "df28f92df1083d82ef55b844295d7726",
                                                 "children": ""
                                             },
                                             {
@@ -6326,7 +6402,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2021-04-11T15:27:23",
                                 "name": "Scripts",
-                                "hash": "73e1899a228608f19c79379e382383be",
+                                "hash": "c56857c30710383f6b1155ab898081ac",
                                 "children": [
                                     {
                                         "isFolder": "true",
@@ -6419,19 +6495,19 @@
                                         "isFolder": "true",
                                         "lastModified": "2021-04-10T01:13:39",
                                         "name": "Gender Classification",
-                                        "hash": "00645fabb50bc8470ff79d5689863f24",
+                                        "hash": "19a2f8b566a71c27fb3668d61778581d",
                                         "children": [
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-04-11T15:27:23",
+                                                "lastModified": "2021-04-11T21:59:22",
                                                 "name": "Singleclass Classification Helpers",
-                                                "hash": "9a85c71d46d8d4f1b5cb7c261b3715ec",
+                                                "hash": "8ad8d9777a6793d160a532f680ae80ca",
                                                 "children": [
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-04-11T10:08:21",
+                                                        "lastModified": "2021-04-11T21:59:21",
                                                         "name": "ClassificationBehaviorHelper.js",
-                                                        "hash": "85e01103376187d0e866e8ca4930144a",
+                                                        "hash": "cd58f91c28cb250501550d24fe9aaa0d",
                                                         "children": ""
                                                     },
                                                     {
@@ -7081,29 +7157,55 @@
                                         "additional": ""
                                     },
                                     {
-                                        "name": "male",
+                                        "name": "female-icon-active",
                                         "type": "1",
                                         "subtype": "9",
-                                        "resourceId": "79",
+                                        "resourceId": "379",
                                         "dependency": "0",
-                                        "uid": "1618005167839841:64966",
-                                        "fileId": "127",
-                                        "originalId": "128",
-                                        "publicId": "23210",
-                                        "source": "\/private\/var\/folders\/fm\/r2w0yxns3g550qmmwzz2tzvh0000gn\/T\/Lens Studio-jxIpnO\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                        "uid": "1618180026227101:124119",
+                                        "fileId": "565",
+                                        "originalId": "566",
+                                        "publicId": "23513",
+                                        "source": "\/Users\/joyce\/Desktop\/female-icon-active.png",
                                         "additional": ""
                                     },
                                     {
-                                        "name": "female",
+                                        "name": "male-icon-active",
                                         "type": "1",
                                         "subtype": "9",
-                                        "resourceId": "80",
+                                        "resourceId": "380",
                                         "dependency": "0",
-                                        "uid": "1618005168245986:64994",
-                                        "fileId": "130",
-                                        "originalId": "131",
-                                        "publicId": "23211",
-                                        "source": "\/private\/var\/folders\/fm\/r2w0yxns3g550qmmwzz2tzvh0000gn\/T\/Lens Studio-jxIpnO\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                        "uid": "1618180031532851:139596",
+                                        "fileId": "569",
+                                        "originalId": "570",
+                                        "publicId": "23514",
+                                        "source": "\/Users\/joyce\/Desktop\/male-icon-active.png",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "female-icon",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "381",
+                                        "dependency": "0",
+                                        "uid": "1618180035078282:154870",
+                                        "fileId": "573",
+                                        "originalId": "574",
+                                        "publicId": "23515",
+                                        "source": "\/Users\/joyce\/Desktop\/female-icon.png",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "male-icon",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "382",
+                                        "dependency": "0",
+                                        "uid": "1618180043592859:170749",
+                                        "fileId": "577",
+                                        "originalId": "578",
+                                        "publicId": "23516",
+                                        "source": "\/Users\/joyce\/Desktop\/male-icon.png",
                                         "additional": ""
                                     }
                                 ]
@@ -10068,11 +10170,7 @@
             }
         },
         "InspectorController": {
-            "selection": {
-                "objects": [
-                    "1618146720791430:204809"
-                ]
-            }
+            "selection": ""
         },
         "EffectsController": {
             "1": "",
@@ -10203,60 +10301,6 @@
                                     "settings_hash": "2049"
                                 },
                                 "v": "217"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "k": "1618005167839841:64966",
-                    "v": {
-                        "infos": {
-                            "originalSize": "1152",
-                            "compressedSize": "730",
-                            "originalRAM": "73308",
-                            "compressedRAM": "9424",
-                            "extension": "png",
-                            "settings": {
-                                "isCompressed": "true",
-                                "level": "2",
-                                "type": "1"
-                            }
-                        },
-                        "uncompressed_file": "129",
-                        "compressed_files": [
-                            {
-                                "k": {
-                                    "uncompressed_hash": "2c3c3170bef893fbdd3dec1cbbe2f6cf",
-                                    "settings_hash": "2049"
-                                },
-                                "v": "215"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "k": "1618005168245986:64994",
-                    "v": {
-                        "infos": {
-                            "originalSize": "1042",
-                            "compressedSize": "694",
-                            "originalRAM": "80936",
-                            "compressedRAM": "10336",
-                            "extension": "png",
-                            "settings": {
-                                "isCompressed": "true",
-                                "level": "2",
-                                "type": "1"
-                            }
-                        },
-                        "uncompressed_file": "132",
-                        "compressed_files": [
-                            {
-                                "k": {
-                                    "uncompressed_hash": "b7baadf34abb5534ee614487837c13b8",
-                                    "settings_hash": "2049"
-                                },
-                                "v": "218"
                             }
                         ]
                     }
@@ -10662,6 +10706,114 @@
                                     "settings_hash": "2049"
                                 },
                                 "v": "564"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1618180026227101:124119",
+                    "v": {
+                        "infos": {
+                            "originalSize": "6556",
+                            "compressedSize": "2342",
+                            "originalRAM": "14400",
+                            "compressedRAM": "1800",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1"
+                            }
+                        },
+                        "uncompressed_file": "567",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "051e1e08a59c01ab1d53da92c0aebe52",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "568"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1618180031532851:139596",
+                    "v": {
+                        "infos": {
+                            "originalSize": "7245",
+                            "compressedSize": "2345",
+                            "originalRAM": "14400",
+                            "compressedRAM": "1800",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1"
+                            }
+                        },
+                        "uncompressed_file": "571",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "df28f92df1083d82ef55b844295d7726",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "572"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1618180035078282:154870",
+                    "v": {
+                        "infos": {
+                            "originalSize": "6989",
+                            "compressedSize": "2557",
+                            "originalRAM": "14400",
+                            "compressedRAM": "1800",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1"
+                            }
+                        },
+                        "uncompressed_file": "575",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "0e119d3915aa96454c15ac440906e400",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "576"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1618180043592859:170749",
+                    "v": {
+                        "infos": {
+                            "originalSize": "7307",
+                            "compressedSize": "2621",
+                            "originalRAM": "14400",
+                            "compressedRAM": "1800",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1"
+                            }
+                        },
+                        "uncompressed_file": "579",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "84465abadbfd94f8e97a71ca4dbb053d",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "580"
                             }
                         ]
                     }
