@@ -3,7 +3,7 @@
     "document_id": "5gHTu4YC10oCWnd1Iiyl",
     "original_document_id": "5gHTu4YC10oCWnd1Iiyl",
     "version": "27",
-    "lastChanged": "1618127500838",
+    "lastChanged": "1618159463118",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -825,6 +825,10 @@
                         "Particles Emitter Material"
                     ],
                     [
+                        "Materials",
+                        "Unlit"
+                    ],
+                    [
                         "Meshes"
                     ],
                     [
@@ -974,6 +978,9 @@
                     [
                         "Meshes",
                         "emitter_1000"
+                    ],
+                    [
+                        "Portrait Background Segmentation"
                     ],
                     [
                         "Scripts"
@@ -1168,6 +1175,10 @@
                     ],
                     [
                         "Textures",
+                        "black-texture"
+                    ],
+                    [
+                        "Textures",
                         "cr_linear_blend"
                     ],
                     [
@@ -1199,6 +1210,7 @@
                     "1617904344548791:1050489",
                     "1617904344838163:1050852",
                     "1617904345204762:1051419",
+                    "1617904345217651:1051421",
                     "1617904345237952:1051787",
                     "1617904345252544:1051831",
                     "1617904345275426:1051939",
@@ -1207,6 +1219,8 @@
                     "1617908987362513:55487",
                     "1617965167593211:56171",
                     "1617965209036232:68068",
+                    "1618005171003136:65721",
+                    "1618005171006085:65723",
                     "1618005171593220:70922",
                     "1618005171599777:70924",
                     "1618005171693400:71013",
@@ -1215,7 +1229,9 @@
                     "1618005171901460:71883",
                     "1618005171912605:71933",
                     "1618005171928612:72603",
-                    "1618124245766819:115203"
+                    "1618124245766819:115203",
+                    "1618124245773221:115205",
+                    "1618124245776119:115207"
                 ]
             ]
         },
@@ -2831,6 +2847,30 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "235",
+                    "uid": "1618159429262342:98081",
+                    "name": "Files\/File337",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "236",
+                    "uid": "1618159429322665:98104",
+                    "name": "Portrait Background Segmentation",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "237",
+                    "uid": "1618159429435743:98140",
+                    "name": "Files\/File339.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -3155,6 +3195,48 @@
                                     "attachTop": "false"
                                 }
                             }
+                        },
+                        {
+                            "k": "1618159429711801:98293",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1618159429827325:98556",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1618159429850863:98688",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
                         }
                     ],
                     "generalData": ""
@@ -3371,7 +3453,10 @@
                 "205": "1618124248841055:116654",
                 "206": "1618124248867250:116670",
                 "207": "1618124248875489:116686",
-                "208": "1618124248932408:116710"
+                "208": "1618124248932408:116710",
+                "209": "1618159429488822:98156",
+                "210": "1618159429506742:98158",
+                "211": "1618159429746057:98429"
             }
         },
         "LayerComponent": {
@@ -4385,6 +4470,98 @@
                 {
                     "k": "319",
                     "v": "Files\/File319.pvr"
+                },
+                {
+                    "k": "320",
+                    "v": "Files\/File320.png"
+                },
+                {
+                    "k": "321",
+                    "v": "Files\/File321.png"
+                },
+                {
+                    "k": "322",
+                    "v": "Files\/File322.png"
+                },
+                {
+                    "k": "323",
+                    "v": "Files\/File323.png"
+                },
+                {
+                    "k": "324",
+                    "v": "Files\/File324.png"
+                },
+                {
+                    "k": "325",
+                    "v": "Files\/File325.png"
+                },
+                {
+                    "k": "326",
+                    "v": "Files\/File326.png"
+                },
+                {
+                    "k": "327",
+                    "v": "Files\/File327.png"
+                },
+                {
+                    "k": "328",
+                    "v": "Files\/File328.png"
+                },
+                {
+                    "k": "329",
+                    "v": "Files\/File329.png"
+                },
+                {
+                    "k": "330",
+                    "v": "Files\/File330.png"
+                },
+                {
+                    "k": "331",
+                    "v": "Files\/File331.png"
+                },
+                {
+                    "k": "332",
+                    "v": "Files\/File332.png"
+                },
+                {
+                    "k": "333",
+                    "v": "Files\/File333.png"
+                },
+                {
+                    "k": "334",
+                    "v": "Files\/File334.png"
+                },
+                {
+                    "k": "335",
+                    "v": "Files\/File335.png"
+                },
+                {
+                    "k": "336",
+                    "v": "Files\/File336.png"
+                },
+                {
+                    "k": "337",
+                    "v": "Files\/File337"
+                },
+                {
+                    "k": "338",
+                    "v": "Files\/File338.lsmat"
+                },
+                {
+                    "k": "339",
+                    "v": "Files\/File339.pvr"
+                },
+                {
+                    "k": "340",
+                    "v": "Files\/File340.png"
+                },
+                {
+                    "k": "341",
+                    "v": "Files\/File341.png"
+                },
+                {
+                    "k": "342",
+                    "v": "Files\/File342.pvr"
                 }
             ]
         },
@@ -4960,6 +5137,14 @@
                     {
                         "k": "23400",
                         "v": "Echopark.hdr"
+                    },
+                    {
+                        "k": "23401",
+                        "v": "Materials\/Unlit.lsmat"
+                    },
+                    {
+                        "k": "23402",
+                        "v": "Textures\/black-texture.png"
                     }
                 ],
                 "hashes": [
@@ -5950,6 +6135,14 @@
                     {
                         "k": "23400",
                         "v": "0cf0e87a54f33218fcf92a12d7f0ede2"
+                    },
+                    {
+                        "k": "23401",
+                        "v": "b4df667b876763ba630531e1e650680a"
+                    },
+                    {
+                        "k": "23402",
+                        "v": "f59697539e24f14d7384e22bedbca869"
                     }
                 ],
                 "publicState": {
@@ -5957,13 +6150,13 @@
                         "isFolder": "true",
                         "lastModified": "2021-04-11T10:43:13",
                         "name": "Public",
-                        "hash": "af5ef9871d8e9fc6677866fadd2f8f7c",
+                        "hash": "82c35bf776bac9e02864660ffd577370",
                         "children": [
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-04-11T09:57:17",
+                                "lastModified": "2021-04-11T19:43:49",
                                 "name": "Textures",
-                                "hash": "af05f6048ac3eef62018d7ab5dfd7b6e",
+                                "hash": "846bf5eb487c46414b5ac7f01ab13225",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -6041,6 +6234,13 @@
                                         "lastModified": "2021-04-10T00:52:22",
                                         "name": "cr_linear_blend.png",
                                         "hash": "a4351832b6036772e2116d55c7e15da6",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2021-04-11T19:43:49",
+                                        "name": "black-texture.png",
+                                        "hash": "f59697539e24f14d7384e22bedbca869",
                                         "children": ""
                                     },
                                     {
@@ -6125,9 +6325,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-04-10T10:52:15",
+                                "lastModified": "2021-04-11T19:43:52",
                                 "name": "Materials",
-                                "hash": "4916393f7beebe28e9d2f53ad96f744d",
+                                "hash": "f0953de0c73e1ff90f558952c97bf08e",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -6229,6 +6429,13 @@
                                         "lastModified": "2021-04-10T00:54:43",
                                         "name": "Occluder.lsmat",
                                         "hash": "c92968fd2e79e20b07fa4f939bb9bbe1",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2021-04-11T19:43:52",
+                                        "name": "Unlit.lsmat",
+                                        "hash": "b4df667b876763ba630531e1e650680a",
                                         "children": ""
                                     },
                                     {
@@ -7562,6 +7769,19 @@
                                 "publicId": "23360",
                                 "source": "\/private\/var\/folders\/fm\/r2w0yxns3g550qmmwzz2tzvh0000gn\/T\/Lens Studio-VIzDwP\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
                                 "additional": ""
+                            },
+                            {
+                                "name": "black-texture",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "237",
+                                "dependency": "0",
+                                "uid": "1618159429435743:98140",
+                                "fileId": "339",
+                                "originalId": "340",
+                                "publicId": "23402",
+                                "source": "\/private\/var\/folders\/fm\/r2w0yxns3g550qmmwzz2tzvh0000gn\/T\/Lens Studio-dFQFun\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": ""
                             }
                         ]
                     },
@@ -8107,6 +8327,19 @@
                                 "fileId": "210",
                                 "originalId": "211",
                                 "publicId": "23258",
+                                "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "Unlit",
+                                "type": "2",
+                                "subtype": "0",
+                                "resourceId": "235",
+                                "dependency": "0",
+                                "uid": "1618159429262342:98081",
+                                "fileId": "337",
+                                "originalId": "338",
+                                "publicId": "23401",
                                 "source": "",
                                 "additional": ""
                             }
@@ -10963,6 +11196,19 @@
                                 "additional": ""
                             }
                         ]
+                    },
+                    {
+                        "name": "Portrait Background Segmentation",
+                        "type": "1",
+                        "subtype": "14",
+                        "resourceId": "236",
+                        "dependency": "0",
+                        "uid": "1618159429322665:98104",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "18446744073709551615",
+                        "source": "",
+                        "additional": ""
                     }
                 ]
             }
@@ -10970,7 +11216,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1617908987368486:55489"
+                    "1618159429488822:98156"
                 ]
             }
         },
@@ -11424,6 +11670,13 @@
                             {
                                 "k": {
                                     "uncompressed_hash": "022c7f5c8784c0b40dfc11ad08abe07b",
+                                    "settings_hash": "1024"
+                                },
+                                "v": "322"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "022c7f5c8784c0b40dfc11ad08abe07b",
                                     "settings_hash": "2049"
                                 },
                                 "v": "311"
@@ -11448,6 +11701,20 @@
                         },
                         "uncompressed_file": "279",
                         "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "ed6b44c9fde2879cda351de0096b5387",
+                                    "settings_hash": "1024"
+                                },
+                                "v": "321"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "ed6b44c9fde2879cda351de0096b5387",
+                                    "settings_hash": "2048"
+                                },
+                                "v": "320"
+                            },
                             {
                                 "k": {
                                     "uncompressed_hash": "ed6b44c9fde2879cda351de0096b5387",
@@ -11478,6 +11745,20 @@
                             {
                                 "k": {
                                     "uncompressed_hash": "5b694fd7b06b50724a3d431af159d7d7",
+                                    "settings_hash": "1024"
+                                },
+                                "v": "324"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "5b694fd7b06b50724a3d431af159d7d7",
+                                    "settings_hash": "2048"
+                                },
+                                "v": "323"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "5b694fd7b06b50724a3d431af159d7d7",
                                     "settings_hash": "2049"
                                 },
                                 "v": "312"
@@ -11502,6 +11783,20 @@
                         },
                         "uncompressed_file": "285",
                         "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "57e2df6b844ef5d029bf4a6c04b2e3ee",
+                                    "settings_hash": "1024"
+                                },
+                                "v": "326"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "57e2df6b844ef5d029bf4a6c04b2e3ee",
+                                    "settings_hash": "2048"
+                                },
+                                "v": "325"
+                            },
                             {
                                 "k": {
                                     "uncompressed_hash": "57e2df6b844ef5d029bf4a6c04b2e3ee",
@@ -11532,6 +11827,20 @@
                             {
                                 "k": {
                                     "uncompressed_hash": "8e492a4cb7c0911d4fedf273bac1e3a3",
+                                    "settings_hash": "1024"
+                                },
+                                "v": "328"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "8e492a4cb7c0911d4fedf273bac1e3a3",
+                                    "settings_hash": "2048"
+                                },
+                                "v": "327"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "8e492a4cb7c0911d4fedf273bac1e3a3",
                                     "settings_hash": "2049"
                                 },
                                 "v": "314"
@@ -11556,6 +11865,20 @@
                         },
                         "uncompressed_file": "291",
                         "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "d72c8ec8cb8ef00b271f6df00f828334",
+                                    "settings_hash": "1024"
+                                },
+                                "v": "330"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "d72c8ec8cb8ef00b271f6df00f828334",
+                                    "settings_hash": "2048"
+                                },
+                                "v": "329"
+                            },
                             {
                                 "k": {
                                     "uncompressed_hash": "d72c8ec8cb8ef00b271f6df00f828334",
@@ -11586,6 +11909,20 @@
                             {
                                 "k": {
                                     "uncompressed_hash": "e767e6eda1c7eb3e1ae7a81095e4bae1",
+                                    "settings_hash": "1024"
+                                },
+                                "v": "332"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "e767e6eda1c7eb3e1ae7a81095e4bae1",
+                                    "settings_hash": "2048"
+                                },
+                                "v": "331"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "e767e6eda1c7eb3e1ae7a81095e4bae1",
                                     "settings_hash": "2049"
                                 },
                                 "v": "317"
@@ -11610,6 +11947,20 @@
                         },
                         "uncompressed_file": "307",
                         "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "bc299a16c89c9a538aa9d569793f3d8e",
+                                    "settings_hash": "1024"
+                                },
+                                "v": "334"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "bc299a16c89c9a538aa9d569793f3d8e",
+                                    "settings_hash": "2048"
+                                },
+                                "v": "333"
+                            },
                             {
                                 "k": {
                                     "uncompressed_hash": "bc299a16c89c9a538aa9d569793f3d8e",
@@ -11640,9 +11991,50 @@
                             {
                                 "k": {
                                     "uncompressed_hash": "ecb8c2aa5e63ec696319eb64cf35d808",
+                                    "settings_hash": "1024"
+                                },
+                                "v": "336"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "ecb8c2aa5e63ec696319eb64cf35d808",
+                                    "settings_hash": "2048"
+                                },
+                                "v": "335"
+                            },
+                            {
+                                "k": {
+                                    "uncompressed_hash": "ecb8c2aa5e63ec696319eb64cf35d808",
                                     "settings_hash": "2049"
                                 },
                                 "v": "318"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1618159429435743:98140",
+                    "v": {
+                        "infos": {
+                            "originalSize": "335",
+                            "compressedSize": "191",
+                            "originalRAM": "14100",
+                            "compressedRAM": "1824",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1"
+                            }
+                        },
+                        "uncompressed_file": "341",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "f59697539e24f14d7384e22bedbca869",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "342"
                             }
                         ]
                     }
