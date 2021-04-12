@@ -57,18 +57,24 @@ function onUpdate(eventData) {
 
     if(script.hand.getTransform().getWorldRotation().z>= -0.2 || script.middleFinger.getTransform().getWorldRotation().z > -0.9){
        stop();
-      
-         if(script.middleFinger.getTransform().getWorldRotation().z > -0.7){
-           
-            if(isCandyVisible){
+        
+    //    print(script.middleFinger.getTransform().getWorldPosition().y + ' '+ script.wrist.getTransform().getWorldPosition().y );
+       
+        //check if hand palm is closed
+       var diff= script.middleFinger.getTransform().getWorldPosition().y - script.wrist.getTransform().getWorldPosition().y;     
+         if(script.middleFinger.getTransform().getWorldRotation().z > -0.7 ){
+          // print('1 '+ diff )
+            if(isCandyVisible && diff > 2){
+                
                 isCandyVisible=false;
                    if(global.tweenManager){                      
                     global.tweenManager.startTween( candy.getSceneObject(), "hide_plane");
                    
-                  }  
+                  }    
+               }
             }
           
-        }
+        
 
 
     }
@@ -250,9 +256,10 @@ script.api.openGesture=openGesture;
 
 function trackingFound() {
     isTrackingLost=false;
-    
-    //hide all candies and assign new candy
+     //hide all candies and assign new candy
     hideCandies();
+    isCandyVisible=false;
+   
     candy= getRandomCandy();
 }
 
